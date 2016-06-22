@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/home/greg/.node_modules_global/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   'khepri-connector' ]
+2 info using npm@3.9.0
+3 info using node@v4.2.6
+4 silly mapToRegistry name khepri-connector
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: 'khepri-connector',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   name: 'khepri-connector',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/khepri-connector
+9 verbose request uri https://registry.npmjs.org/khepri-connector
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 15:17:37
+12 verbose request id dca33abb7be5d193
+13 http request GET https://registry.npmjs.org/khepri-connector
+14 http 404 https://registry.npmjs.org/khepri-connector
+15 verbose headers { 'content-type': 'application/json',
+15 verbose headers   'cache-control': 'max-age=0',
+15 verbose headers   'content-length': '2',
+15 verbose headers   'accept-ranges': 'bytes',
+15 verbose headers   date: 'Wed, 22 Jun 2016 13:17:37 GMT',
+15 verbose headers   via: '1.1 varnish',
+15 verbose headers   age: '0',
+15 verbose headers   connection: 'keep-alive',
+15 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+15 verbose headers   'x-cache': 'MISS',
+15 verbose headers   'x-cache-hits': '0',
+15 verbose headers   'x-timer': 'S1466601457.609531,VS0,VE179',
+15 verbose headers   vary: 'Accept-Encoding' }
+16 silly get cb [ 404,
+16 silly get   { 'content-type': 'application/json',
+16 silly get     'cache-control': 'max-age=0',
+16 silly get     'content-length': '2',
+16 silly get     'accept-ranges': 'bytes',
+16 silly get     date: 'Wed, 22 Jun 2016 13:17:37 GMT',
+16 silly get     via: '1.1 varnish',
+16 silly get     age: '0',
+16 silly get     connection: 'keep-alive',
+16 silly get     'x-served-by': 'cache-lcy1125-LCY',
+16 silly get     'x-cache': 'MISS',
+16 silly get     'x-cache-hits': '0',
+16 silly get     'x-timer': 'S1466601457.609531,VS0,VE179',
+16 silly get     vary: 'Accept-Encoding' } ]
+17 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/khepri-connector
+17 verbose stack     at makeError (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+17 verbose stack     at CachingRegistryClient.<anonymous> (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+17 verbose stack     at Request._callback (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+17 verbose stack     at Request.self.callback (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/request/request.js:200:22)
+17 verbose stack     at emitTwo (events.js:87:13)
+17 verbose stack     at Request.emit (events.js:172:7)
+17 verbose stack     at Request.<anonymous> (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+17 verbose stack     at emitOne (events.js:82:20)
+17 verbose stack     at Request.emit (events.js:169:7)
+17 verbose stack     at IncomingMessage.<anonymous> (/home/greg/.node_modules_global/lib/node_modules/npm/node_modules/request/request.js:988:12)
+18 verbose statusCode 404
+19 verbose pkgid khepri-connector
+20 verbose cwd /home/greg/Zend/workspaces/khepri_connectors/node.js
+21 error Linux 4.4.0-24-generic
+22 error argv "/usr/bin/nodejs" "/home/greg/.node_modules_global/bin/npm" "view" "khepri-connector"
+23 error node v4.2.6
+24 error npm  v3.9.0
+25 error code E404
+26 error 404 Registry returned 404 for GET on https://registry.npmjs.org/khepri-connector
+27 error 404
+28 error 404 'khepri-connector' is not in the npm registry.
+29 error 404 You should bug the author to publish it (or use the name yourself!)
+30 error 404 Note that you can also install from a
+31 error 404 tarball, folder, http url, or git url.
+32 verbose exit [ 1, true ]
