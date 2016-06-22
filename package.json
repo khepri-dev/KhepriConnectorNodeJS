@@ -3,12 +3,6 @@
   "version": "0.0.1",
   "description": "Implement the Khepri Api in node.js",
   "main": "lib/KhepriConnector.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "test.*js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GregoryGerard/KhepriConnector.git"
@@ -21,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/GregoryGerard/KhepriConnector/issues"
   },
-  "homepage": "https://github.com/GregoryGerard/KhepriConnector#readme"
+  "homepage": "https://github.com/GregoryGerard/KhepriConnector#readme",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test/*.js"
+  }
 }
