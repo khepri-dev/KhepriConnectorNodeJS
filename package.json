@@ -21,5 +21,9 @@
   },
   "scripts": {
     "test": "test/*.js"
-  }
+  },
+  "dependencies": {
+    "request": "^2.72.0"
+  },
+  "devDependencies": {}
 }
