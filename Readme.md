@@ -16,24 +16,23 @@ Method Available
 Write a test File:
 
  
-`#!/usr/bin/node`
-`"se strict";`
-`var khepriObj = require('khepri-connector');`
-`var urlKhepri = 'http://providedUrl.khepri';`
-`var apiKey = 'thekeyprovided';`
-`var instanceId = 4242;`
-`var test = false;`
+\#!/usr/bin/node
+"use strict";
+var khepriObj = require('khepri-connector');
+var urlKhepri = 'http://providedUrl.khepri';
+var apiKey = 'thekeyprovided';
+var instanceId = 4242;
+var test = false;
 
-`khepriObj.init(urlKhepri, apiKey);`
-`khepriObj.ask(instanceId, ["Zlatan", "Zidane"], [ 'Platini', 'Pogba'], false, function (answer) { console.log(answer); test = answer } );`
-`# communicating a success`
-`setTimeout(function() {`
-`    if (test != false) {`
-`        khepriObj.success(instanceId, test.solution, false, function (chk) { console.log('Result du success');console.log(chk); } );`
-`    }`
-`}, 500);`
+khepriObj.init(urlKhepri, apiKey);
+khepriObj.ask(instanceId, ["Zlatan", "Zidane"], [ 'Platini', 'Pogba'], false, function (answer) { console.log(answer); test = answer } );
+\# communicating a success
+setTimeout(function() {
+    if (test != false) {
+        khepriObj.success(instanceId, test.solution, false, function (chk) { console.log('Result du success');console.log(chk); } );
+    }
+}, 500);
 
-
-`# reset the instance`
-`khepriObj.reset(instanceId,function (chk) { console.log('Result du reset');console.log(chk); } );`
+\# reset the instance
+khepriObj.reset(instanceId,function (chk) { console.log('Result du reset');console.log(chk); } );
 
