@@ -16,12 +16,6 @@
     "url": "https://github.com/GregoryGerard/KhepriConnector/issues"
   },
   "homepage": "https://github.com/GregoryGerard/KhepriConnector#readme",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "test/*.js"
-  },
   "dependencies": {
     "request": "^2.72.0"
   },

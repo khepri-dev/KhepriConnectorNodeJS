@@ -20,7 +20,7 @@ module.exports = {
     },
 
 
-    ask : function(instanceId, excludes, forcedSolutions, dimensions, callback) {
+    ask : function(instanceId, callback, excludes, forcedSolutions, dimensions) {
         var optionnalArgs = '';
         var excludeQs = '';
         var forcedSolutionsQs = '';
@@ -62,7 +62,7 @@ module.exports = {
         return this;
     },
 
-    success : function(instanceId, solutions, dimensions, callback) {
+    success : function(instanceId, solutions, callback, dimensions) {
         var options = {
             host: url.parse(this.urlKhepri).host,
             path: '/api/success.json?api_key=' + this.apiKey + '&instance=' + instanceId +  '&solution=' + solutions
