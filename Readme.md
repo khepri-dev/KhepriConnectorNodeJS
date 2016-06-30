@@ -19,7 +19,9 @@ Write a test File:
 > \#!/usr/bin/node
 
 > \# require khepri-connector package
+
 > \# You need to install it with :
+
 > \# npm install khepri-connector
 
 > var khepriObj = require('khepri-connector');
