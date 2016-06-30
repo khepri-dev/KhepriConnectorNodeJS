@@ -1,6 +1,6 @@
 {
   "name": "khepri-connector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implement the Khepri Api in node.js",
   "main": "lib/KhepriConnector.js",
   "repository": {
