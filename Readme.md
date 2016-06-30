@@ -15,30 +15,36 @@ Method Available
 
 Write a test File:
 
- 
+
 > \#!/usr/bin/node
 
-> "use strict";
+> \# require khepri-connector package
+> \# You need to install it with :
+> \# npm install khepri-connector
 
 > var khepriObj = require('khepri-connector');
 
-> var urlKhepri = 'http://providedUrl.khepri';
+> \# Setting you're khepri parameters
 
-> var apiKey = 'thekeyprovided';
+> \# Khepri URL (sandbox environment)
 
-> var instanceId = 4242;
+> var khepri_url ='http://sb.khepri.tech'
 
-> var test = false;
+> \# Initialize the client with your  API-Key. You can find it on your Khepri account.
+> var api_key = 'MY_APi_KEY'
 
-> khepriObj.init(urlKhepri, apiKey);
+> \# you can create your instance with your khepri account here we select the instance 1
 
-> khepriObj.ask(instanceId, ["Zlatan", "Zidane"], [ 'Platini', 'Pogba'], false, function (answer) { console.log(answer); test = answer } );
+> var instance_id = 1
 
-> \# communicating a success
+> \# init 
 
-> khepriObj.success(instanceId, test.solution, false, function (chk) { console.log('Result du success');console.log(chk); } );
+> khepriObj.init(khepri_url, api_key);
 
-> \# reset the instance
+> \# Simple ask
 
-> khepriObj.reset(instanceId,function (chk) { console.log('Result du reset');console.log(chk); } );
+> khepriObj.ask(instanceId, function (answer) { console.log(answer);} );
 
+> \# Simple success
+
+> khepriObj.success(instanceId, answer.solution, function (chk) { console.log('Result du success');; });
